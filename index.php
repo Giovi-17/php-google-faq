@@ -111,19 +111,9 @@
 
             <div class="containerFaqs">
 
-                <?php foreach( $faq as $key => $faqX ){ ?>
+                <h2><?php  echo $faq["request"] ?></h2>
 
-                    <?php if( $key === "request" ){ ?>
-
-                        <h2><?php  echo $faqX ?></h2>
-
-                    <?php } else if( $key === "answer" ){ ?>
-
-                        <p><?php echo $faqX ?></p>
-
-                    <?php } ?>
-
-                <?php } ?>
+                <p><?php echo $faq["answer"] ?></p>
 
             </div>
 
